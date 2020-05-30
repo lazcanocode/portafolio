@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&display=swap');
+
+$Font1: 'Roboto', sans-serif;
+$Font2: 'Open Sans', sans-serif;
+
+$primary-color: #1A237E;
+$secundary-color: #E1BEE7;
+$black-color: #151517;
+$white-color: #FFF1FF;
+$background-light: #F5F5F6;
+$background-dark: #E1E2E1;
+
+
+@mixin title($font,$type){
+  @if $font == $Font1 {
+    font-family: $Font1;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: $white-color;
+    @if($type== h1){
+      font-size: 22px;
+    }@else if($type== h2){
+      font-size: 22px;
+    }@else if($type== h3){
+      font-size: 22px;
+      color: $primary-color;
+    }
+  }@else{
+    font-family: $Font2;
+    @if($type== h4){
+      font-size: 16px;
+      color: $black-color;
+    }@else if($type== h6){
+      font-size: 16px;
+      color: $background-dark;
+    }
+
+  }
+}
+
+body{
+  margin: 0;
+  background-color: $white-color;
+  h1,h2,h3,h4,h6{
+    margin:0
+  }
+}
+
+
+// @mixin getFont($font, $size){
+//   @if $font == $Font1 {
+//     font-family: $Font1;
+//     font-weight: 800;
+//     @if $size == h1{
+//       font-size: 20px;
+//       text-transform: uppercase;
+//     }else{
+//       font-size: 18px;
+//     }
+//   }@else{
+//     font-family: $Font2;
+//   }
+// }
