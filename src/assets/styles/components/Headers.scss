@@ -10,4 +10,8 @@
 .Header__title{
   margin-top: 12px;
   @include title($Font1, h1);
+  @include media(tablet){
+    margin-top: initial;
+    @include font-size(28px);
+  }
 }

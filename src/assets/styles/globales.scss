@@ -12,6 +12,17 @@ $background-light: #F5F5F6;
 $background-dark: #E1E2E1;
 
 
+@function calculateRem($size){
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size){
+  font-size:calculateRem($size);
+  line-height: calculateRem($size)*1.5;
+}
+
+
 @mixin title($font,$type){
   @if $font == $Font1 {
     font-family: $Font1;
