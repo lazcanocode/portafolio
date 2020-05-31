@@ -1,0 +1,16 @@
+.Objective{
+  width: calc(100%-20px);
+  height: 150px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: $background-light;
+  &__title{
+    text-align: center;
+    @include title($Font1 ,h2);
+    color: $primary-color;
+  }
+  &__parrafo{
+    text-align: center;
+    @include title($Font2, h4)
+  }
+}
