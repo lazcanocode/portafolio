@@ -10,3 +10,12 @@
     color: $white-color;
   }
 }
+
+@include media(tablet){
+.Footer{
+  &__text{
+    @include font-size(21px);
+    font-weight: 600;
+  }
+}
+}

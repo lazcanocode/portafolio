@@ -22,3 +22,21 @@
     margin-bottom: 20px;
   }
 }
+
+@include media(tablet){
+  .Card{
+    border-width: 4px;
+    border-radius: 18px;
+    &__title{
+      @include font-size(25px)
+    }
+    &__date{
+      @include font-size(18px);
+      margin:0;
+    }
+    &__description{
+      margin-top: 10px;
+      @include font-size(21px);
+    }
+  }
+}

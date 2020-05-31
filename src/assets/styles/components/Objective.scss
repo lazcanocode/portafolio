@@ -10,7 +10,21 @@
     color: $primary-color;
   }
   &__parrafo{
+    margin-top: 10px;
     text-align: center;
     @include title($Font2, h4)
+  }
+}
+
+@include media(tablet){
+  .Objective{
+    height: 170px;
+    padding: 25px 22px;
+    &__title{
+      @include font-size(27px);
+    }
+    &__parrafo{
+      @include font-size(21px)
+    }
   }
 }

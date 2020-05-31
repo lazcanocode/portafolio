@@ -10,8 +10,18 @@
     color: $primary-color;
   }
   &__cards{
-    width: calc(100%-20px);
     padding: 0 10px;
     padding-top: 20px;
   }
+}
+
+@include media(tablet){
+.Experience{
+  &__title{
+    @include font-size(27px);
+  }
+  &__cards{
+    padding: 25px 22px;
+  }
+}
 }
