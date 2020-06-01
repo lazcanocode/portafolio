@@ -19,3 +19,10 @@
   }
 }
 }
+
+@include media(tablet){
+  .Footer{
+    height: 100px;
+    @include font-size(27px);
+  }
+}

@@ -40,3 +40,18 @@
     }
   }
 }
+
+@include media(desktop-s){
+  .Card{
+    border-radius: 20px;
+    &__title{
+      margin-top: 5px;
+    }
+    &__date{
+    }
+    &__description{
+      margin-top: 15px;
+      @include font-size(22px);
+    }
+  }
+}

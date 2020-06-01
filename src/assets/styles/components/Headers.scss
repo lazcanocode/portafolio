@@ -5,13 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &__title{
+    margin-top: 12px;
+    @include title($Font1, h1);
+    @include media(tablet){
+      margin-top: initial;
+      @include font-size(28px);
+    }
+  }
 }
 
-.Header__title{
-  margin-top: 12px;
-  @include title($Font1, h1);
-  @include media(tablet){
-    margin-top: initial;
-    @include font-size(28px);
+
+@include media(desktop-s){
+  .Header{
+  height: 80px;
+    &__title{
+      @include font-size(36px);
+    }
   }
 }

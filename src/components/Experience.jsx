@@ -35,7 +35,7 @@ class Experience extends React.Component {
           id: '5azd',
           title: 'Centro de Investigaciones en Optica',
           date: '15/06/15 - 15/08/15',
-          description: 'Desarrolle un sistema de reconocimiento e objetos utilizando una red Backprogation con Matlab',
+          description: 'Desarrolle un sistema de reconocimiento de objetos utilizando una Red Backprogation con Matlab',
         },
       ],
     };

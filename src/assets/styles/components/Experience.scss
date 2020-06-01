@@ -25,3 +25,14 @@
   }
 }
 }
+
+@include media(desktop-s){
+  .Experience{
+    &__title{
+      @include font-size(32px)
+    }
+    &__cards{
+    padding: 25px 200px;
+    }
+  }
+}

@@ -14,6 +14,7 @@
   &__img{
     width: 40%;
     text-align: center;
+    object-fit: cover;
     &--profile{
       height: 100px;
       width: 100px;
@@ -63,6 +64,31 @@
       &--linkedin{
         margin-right: 0;
         margin-left: 10px;
+      }
+    }
+  }
+}
+
+@include media(desktop-s){
+  .Hero{
+    padding: 14px 200px;
+    height: 240px;
+    justify-content: space-between;
+    &__text{
+      @include font-size(32px);
+    }
+    &__img{
+      height: inherit;
+      &--profile{
+        height: 150px;
+        width: 150px;
+        border-width: 3.5px;
+      }
+      &--social{
+        &--github, &--linkedin{
+          width: 55px;
+          height: 55px;
+        }
       }
     }
   }
